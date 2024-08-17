@@ -1,0 +1,184 @@
+:root {
+    --primary-color: #F54130;
+    --white-color: #FEFEFE;
+    --black-color: #000;
+    --text-color: #333;
+
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box ;
+}
+
+html {
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    font-family: "Roboto", sans-serif;
+    box-sizing: border-box;
+}
+
+/* responsive */
+
+.grid {
+    width: 414px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.grid__row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.grid__column-1 {
+    width: 97%;
+}
+
+.home__produc-none {
+    display: none;
+}
+
+/* header */
+
+.schedule__heading {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    display: flex;
+    align-items: center;
+}
+
+.schedule__heading i {
+    font-size: 2.1rem;
+    padding: 20px;
+}
+
+.schedule__heading span {
+    font-size: 2.2rem;
+    padding: 20px;
+    font-weight: 600;
+}
+
+/* schedule*/
+
+.schedule__nav {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.schedule__nav-item {
+    position: relative;
+    width: 50%;
+    font-size: 1.6rem;
+    padding: 17px 25px;
+    color: var(--white-color);
+    background-color: var(--primary-color);
+    display: flex;
+    align-items: center;
+}
+
+.schedule__nav-item-separation::before {
+    content: "";
+    position: absolute;
+    top: 13px;
+    left: -2px;
+    height: 23px;
+    border-radius: 1px;
+    border: 1px solid var(--white-color);
+    background-color: var(--white-color);
+    padding-left: 1px;
+}
+
+.schedule__nav-item span {
+    margin-left: 16px;
+}
+
+.schedule__nav-item i {
+    position: absolute;
+    right: 25px;
+    font-size: 2.4rem;
+    display: flex;
+}
+
+.schedule__nav-item .schedule__nav-item-distance {
+    margin-left: 8px;
+}
+
+/* Produc item  */
+
+.home__produc-item {
+
+}
+
+.home__produc-date {
+
+}
+
+.home__produc-date h3 {
+    font-size: 1.9rem;
+    font-weight: 400;
+    padding: 20px 0;
+    margin-top: 6px;
+    text-align: center;
+    background-color: var(--primary-color);
+}
+
+.home__produc-subject {
+    border-top: 1px solid var(--primary-color);
+}
+
+.home__produc-subject-icon {
+    font-size: 1.4rem;
+    padding: 27px 10px;
+}
+
+.home__produc-subject span {
+    font-size: 1.8rem;
+    font-weight: 500;
+    padding: 23px 0;
+    color: var(--primary-color);
+    text-align: center;
+    width: 89.7%;
+    display: inline-block;
+}
+
+.home__produc-information {
+    margin-bottom: 9px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.home__produc-information-item {
+    padding: 0 13px;
+    margin: auto;
+}
+
+.home__produc-item-hour {
+    padding: 3px 0;
+    font-size: 1.6rem;
+}
+
+.home__produc-hour-crossbar {
+    border-right: 2px solid #ffa49dc4;
+    height: 139px;
+    width: 20.9px;
+    display: block;
+}
+
+.home__produc-information-detailed {
+    width: 76%;
+    padding: 0px 7px;
+}
+
+.home__produc-item-detailed {
+    font-size: 1.6rem;
+    padding-bottom: 12px;
+    padding-top: 12px;
+}
+
+.home__produc-item-more-icon {
+    font-size: 3.1rem;
+}
