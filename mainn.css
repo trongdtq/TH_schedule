@@ -155,6 +155,7 @@ html {
 }
 
 .home__produc-information {
+    min-height: 180px;
     margin-bottom: 9px;
     display: flex;
     justify-content: space-between;
